@@ -4,6 +4,11 @@ LucBot
 A Slack bot that has a command to get data from [Cults](https://cults3d.com)
 and includes [Meuh](github.com/sunny/meuh).
 
+Commands
+--------
+
+- `@luc latest creation` prints the URL to the last Cults creation
+
 Install
 -------
 
