@@ -1,8 +1,19 @@
 LucBot
 ======
 
-A Slack bot.
+A Slack bot that has a command to get data from [Cults](https://cults3d.com)
+and includes [Meuh](github.com/sunny/meuh).
+
+Install
+-------
+
+[Register a Slack bot](http://slack.com/services/new/bot), clone this
+repository, and:
 
 ```sh
-$ SLACK_API_TOKEN=… ruby slack_bot.rb
+$ bundle install
+$ export CULTS_API_USER=…
+$ export CULTS_API_PASS=…
+$ export SLACK_API_TOKEN=…
+$ ruby slack_bot.rb
 ```
