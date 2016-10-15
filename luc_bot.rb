@@ -13,6 +13,16 @@ module Luc
       )
     end
 
+    command "most downloaded creation" do |client, data, match|
+      creation = CultsAPI.new.most_downloaded_creation
+      creator = creation["creator"]
+      client.say(
+        channel: data.channel,
+        text: "The most downloaded creation is **#{creation["name"]}** " \
+              "by **#{creator["nick"]}**: #{creation["url"]}"
+      )
+    end
+
     extend Meuh::SlackPlugin
   end
 end

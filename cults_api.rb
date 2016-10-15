@@ -1,7 +1,13 @@
 module Luc
   class CultsAPI
     def latest_creation
-      http.get("http://cults3d.com/api/v1/creations.json?limit=1")
+      http.get("https://cults3d.com/api/v1/creations.json?limit=1")
+          .parse
+          .first
+    end
+
+    def most_downloaded_creation
+      http.get("https://cults3d.com/api/v1/creations.json?limit=1&sort=sales_counter")
           .parse
           .first
     end
