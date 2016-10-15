@@ -12,6 +12,12 @@ module Luc
           .first
     end
 
+    def most_liked_creation
+      http.get("http://cults3d.com/api/v1/creations.json?limit=1&sort=likes_counter")
+          .parse
+          .first
+    end
+
     private
 
     attr_reader :user, :pass
