@@ -18,8 +18,8 @@ module Luc
       creator = creation["creator"]
       client.say(
         channel: data.channel,
-        text: "The most downloaded creation is **#{creation["name"]}** " \
-              "by **#{creator["nick"]}**: #{creation["url"]}"
+        text: "The most downloaded creation is *#{creation["name"]}* " \
+              "by *#{creator["nick"]}*: #{creation["url"]} :champagne:"
       )
     end
 
