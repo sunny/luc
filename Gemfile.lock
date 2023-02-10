@@ -1,96 +1,89 @@
-PATH
-  remote: ../meuh
+GIT
+  remote: https://github.com/sunny/meuh.git
+  revision: 6d9da0d47eec72f54c861f64888ef23f3d2ef1b6
+  branch: main
   specs:
     meuh (0.1.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.0.0.1)
+    activesupport (7.0.4.2)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (~> 0.7)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
-    addressable (2.4.0)
-    celluloid (0.17.3)
-      celluloid-essentials
-      celluloid-extras
-      celluloid-fsm
-      celluloid-pool
-      celluloid-supervision
-      timers (>= 4.1.1)
-    celluloid-essentials (0.20.5)
-      timers (>= 4.1.1)
-    celluloid-extras (0.20.5)
-      timers (>= 4.1.1)
-    celluloid-fsm (0.20.5)
-      timers (>= 4.1.1)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
+    celluloid (0.18.0)
+      timers (~> 4)
     celluloid-io (0.17.3)
       celluloid (>= 0.17.2)
       nio4r (>= 1.1)
       timers (>= 4.1.1)
-    celluloid-pool (0.20.5)
-      timers (>= 4.1.1)
-    celluloid-supervision (0.20.6)
-      timers (>= 4.1.1)
-    concurrent-ruby (1.0.2)
-    domain_name (0.5.20160826)
+    concurrent-ruby (1.2.0)
+    domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
-    faraday (0.9.2)
+    faraday (0.17.6)
       multipart-post (>= 1.2, < 3)
-    faraday_middleware (0.9.2)
-      faraday (>= 0.7.4, < 0.10)
-    faraday_middleware-parse_oj (0.3.0)
-      faraday (~> 0.9.0)
-      faraday_middleware (~> 0.9.1)
-      oj (~> 2.0)
+    faraday_middleware (0.14.0)
+      faraday (>= 0.7.4, < 1.0)
+    faraday_middleware-parse_oj (0.3.2)
+      faraday (~> 0.9)
+      faraday_middleware (>= 0.9.1, < 1.0)
+      oj (>= 2.0, < 4.0)
+    ffi (1.15.5)
+    ffi-compiler (1.0.1)
+      ffi (>= 1.0.0)
+      rake
     giphy (3.0.0)
       faraday (~> 0.9)
       faraday_middleware (~> 0.9)
       faraday_middleware-parse_oj (~> 0.3)
       launchy (~> 2.4)
-    gli (2.14.0)
-    hashie (3.4.6)
-    hitimes (1.2.4)
-    http (2.0.3)
-      addressable (~> 2.3)
+    gli (2.21.0)
+    hashie (5.0.0)
+    http (5.1.1)
+      addressable (~> 2.8)
       http-cookie (~> 1.0)
-      http-form_data (~> 1.0.1)
-      http_parser.rb (~> 0.6.0)
-    http-cookie (1.0.3)
+      http-form_data (~> 2.2)
+      llhttp-ffi (~> 0.4.0)
+    http-cookie (1.0.5)
       domain_name (~> 0.5)
-    http-form_data (1.0.1)
-    http_parser.rb (0.6.0)
-    i18n (0.7.0)
-    json (2.0.2)
-    launchy (2.4.3)
-      addressable (~> 2.3)
-    minitest (5.9.1)
-    multipart-post (2.0.0)
-    nio4r (1.2.1)
-    oj (2.17.4)
-    slack-ruby-bot (0.9.0)
-      hashie
-      slack-ruby-client (>= 0.6.0)
-    slack-ruby-client (0.7.7)
+    http-form_data (2.3.0)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
+    launchy (2.5.2)
+      addressable (~> 2.8)
+    llhttp-ffi (0.4.0)
+      ffi-compiler (~> 1.0)
+      rake (~> 13.0)
+    minitest (5.17.0)
+    multipart-post (2.3.0)
+    nio4r (2.5.8)
+    oj (3.14.1)
+    public_suffix (5.0.1)
+    rake (13.0.6)
+    slack-ruby-bot (0.16.1)
       activesupport
-      faraday
+      hashie
+      slack-ruby-client (>= 0.14.0)
+    slack-ruby-client (0.14.6)
+      activesupport
+      faraday (>= 0.9)
       faraday_middleware
       gli
       hashie
-      json
       websocket-driver
-    thread_safe (0.3.5)
-    timers (4.1.1)
-      hitimes
-    tzinfo (1.2.2)
-      thread_safe (~> 0.1)
+    timers (4.3.5)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.2)
-    websocket-driver (0.6.4)
+    unf_ext (0.0.8.2)
+    websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.2)
+    websocket-extensions (0.1.5)
 
 PLATFORMS
   ruby
